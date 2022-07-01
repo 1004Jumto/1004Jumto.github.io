@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Being Engineers"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "YEJIN LEE"
+name                     : YEJIN LEE
 description              : "for improving my knowledge"
 url                      : "https://1004jumto.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
