@@ -106,9 +106,8 @@ analytics:
 author:
   name             : "YEJIN LEE"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "If you're prayin' for change you better not wait.
-                      Keep turnin' the pages - Leap of Faith"
-  location         : "Bundang"
+  bio              : "Keep turnin' the pages"
+  location         : "Bundang, Korea"
   email            :  leeyjin0926@gmail.com
   links:
     - label: "Email"
