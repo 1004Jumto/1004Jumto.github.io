@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "YEJIN LEE"
   avatar           : "/assets/avatar.jpg"
-  bio              : "Keep turnin' the pages"
+  bio              : "\"Keep turnin' the pages\""
   location         : "Bundang, Korea"
   email            :  leeyjin0926@gmail.com
   links:
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/1004Jumto"
+      url: "https://github.com/1004Jumto"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
