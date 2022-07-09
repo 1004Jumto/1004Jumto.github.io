@@ -50,6 +50,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Swea" %}
+                        <li><a href="/categories/swea" class="">Programmers ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
          <!--프로젝트-->
         <li>
@@ -60,7 +67,7 @@
             {% endfor %}
         <li>
            
-
+        <!-- 끄적끄적 -->
         <li>
             {% for category in site.categories %}
                 {% if category[0] == "Note" %}
