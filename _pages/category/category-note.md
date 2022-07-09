@@ -1,11 +1,11 @@
 ---
-title: "BeakJoon 백준"
+title: "끄적끄적"
 layout: archive
-permalink: categories/beakjoon
+permalink: categories/note
 author_profile: true
 sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.Beakjoon %}
+{% assign posts = site.categories.Note %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Home"
+  - title: "Home홈"
     url: /home/
 
-  - title: "Categories"
+  - title: "Categories카테고리"
     url: /categories/
   
-  - title: "Tags"
+  - title: "Tags태크"
     url: /tags/
     
   # - title: "About"
