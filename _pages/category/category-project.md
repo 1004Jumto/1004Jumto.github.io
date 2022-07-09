@@ -1,11 +1,11 @@
 ---
-title: "Beakjoon 백준"
+title: "PROJECT 프로젝트"
 layout: archive
-permalink: categories/beakjoon
+permalink: categories/project
 author_profile: true
 sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.Beakjoon %}
+{% assign posts = site.categories.Project %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

@@ -1,5 +1,5 @@
 ---
-title: "Programmers 문제풀이"
+title: "Programmers 프로그래머스 문제풀이"
 layout: archive
 permalink: categories/programmers
 author_profile: true
