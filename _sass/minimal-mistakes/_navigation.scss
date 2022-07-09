@@ -116,35 +116,37 @@
       }
     }
   }
-  
+}
 
+  // 2022-07-10-customizing
+
+  
   .pagination_prev_next {
     @include clearfix();
     float: left;
     width: 100%;
-  
-    /* next/previous buttons */
-    &--pager {
-      margin-top: 0em;
-      padding-top: 0em;
-      display: block;
-      padding: 1em 2em;
-      //float: left;
-      width: 100%;
-      font-family: $sans-serif;
-      font-size: $type-size-5;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      color: $muted-text-color;
-      border: 1px solid mix(#000, $border-color, 25%);
-      border-radius: $border-radius;
+
+  /* next/previous buttons */
+  &--pager {
+    margin-top: 0em;
+    padding-top: 0em;
+    display: block;
+    padding: 1em 2em;
+    //float: left;
+    width: 100%;
+    font-family: $sans-serif;
+    font-size: $type-size-5;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: $muted-text-color;
+    border: 1px solid mix(#000, $border-color, 25%);
+    border-radius: $border-radius;
+
+    .prev_next {
+      font-family: $serif;
+      color:#ffd861;
     }
-  
-      .prev_next {
-        font-family: $serif;
-        color:#ffd861;
-      }
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
