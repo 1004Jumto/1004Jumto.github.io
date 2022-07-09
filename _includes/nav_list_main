@@ -69,22 +69,7 @@
             {% endfor %}
         <li>
             
-<!-- 
-        <span class="nav__sub-title">Project</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/baekjoon" class="">Beakjoon ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">Programmers ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> -->
+
       </li> 
   </ul>
 </nav>
