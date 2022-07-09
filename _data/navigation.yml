@@ -6,8 +6,14 @@ main:
   - title: "Categories카테고리"
     url: /categories/
   
-  - title: "Tags태크"
+  - title: "Tags태그"
     url: /tags/
+
+  - title: "Yearly연도별"
+    url: /year-archive/
+
+  - title: "Monthly월별"
+    url: /month-archive/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

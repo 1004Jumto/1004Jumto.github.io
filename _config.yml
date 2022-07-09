@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "YEJIN LEE"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/avatar.jpg"
   bio              : "Keep turnin' the pages"
   location         : "Bundang, Korea"
   email            :  leeyjin0926@gmail.com
