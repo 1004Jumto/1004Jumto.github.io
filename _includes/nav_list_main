@@ -59,14 +59,15 @@
             </ul>
 
          <!--프로젝트-->
-        <li>
-            {% for category in site.categories %}
-                  {% if category[0] == "Project" %}
-                    <a href="/categories/project" class=""><span class="nav__sub-title">Project ({{category[1].size}})</span></a>
-                {% endif %}
-            {% endfor %}
-        <li>
-           
+         <span class="nav__sub-title">PROJECT</span>
+             <ul>
+                 {% for category in site.categories %}
+                     {% if category[0] == "Kiosk" %}
+                         <li><a href="/categories/kiosk" class="">Kiosk (with JAVA) ({{category[1].size}})</a></li>
+                    {% endif %}
+                 {% endfor %}
+             </ul>
+
         <!-- 끄적끄적 -->
         <li>
             {% for category in site.categories %}
