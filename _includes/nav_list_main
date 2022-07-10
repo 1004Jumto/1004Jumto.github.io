@@ -39,7 +39,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Baekjoon" %}
-                        <li><a href="/categories/baekjoon" class="">BeakJoon ({{category[1].size}})</a></li>
+                        <li><a href="/categories/baekjoon" class="">BaekJoon ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -53,7 +53,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Swea" %}
-                        <li><a href="/categories/swea" class="">Programmers ({{category[1].size}})</a></li>
+                        <li><a href="/categories/swea" class="">SW Expert Academy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
