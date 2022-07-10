@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://1004jumto.github.io/sitemap.xml
