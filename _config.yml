@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Being Engineers"
+title                    : "Being Engineers - 1004jumto.github.io"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "1004jumto.github.io"
 name                     : "YEJIN LEE"
 description              : "for improving my knowledge"
 url                      : "https://1004jumto.github.io"
