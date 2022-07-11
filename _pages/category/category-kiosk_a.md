@@ -1,7 +1,7 @@
 ---
 title: "[JAVA] Kiosk"
 layout: archive
-permalink: categories/kiosk
+permalink: categories/kiosk_a
 author_profile: true
 sidebar_main: true
 ---

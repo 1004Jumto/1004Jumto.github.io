@@ -62,8 +62,8 @@
          <span class="nav__sub-title">PROJECT</span>
              <ul>
                  {% for category in site.categories %}
-                     {% if category[0] == "Kiosk" %}
-                         <li><a href="/categories/kiosk" class="">Kiosk (with JAVA) ({{category[1].size}})</a></li>
+                     {% if category[0] == "Kiosk_a" %}
+                         <li><a href="/categories/kiosk_a" class="">Kiosk (with JAVA) ({{category[1].size}})</a></li>
                     {% endif %}
                  {% endfor %}
              </ul>
