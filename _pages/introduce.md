@@ -4,6 +4,8 @@ title: "Introduce소개"
 permalink: /home/
 author_profile: true
 sidebar_main: true
+toc: true
+toc_sticky: true
 ---
 
 ## 🤲**공부/문제/프로젝트** 그 외에도 **제 생각**이나 **사소한 끄적임**을 기록해놓기 위한 공간입니다. <br> <small> 본 Introduce 내용은 기억력이 좋지 않은 본인이 본인 블로그에 대한 내용과 구성을 잊지 않기 위한 메모입니다.</small>
