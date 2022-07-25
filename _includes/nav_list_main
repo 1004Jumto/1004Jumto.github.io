@@ -75,6 +75,14 @@
                  {% endfor %}
              </ul>
 
+             <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Meit_Kiosk" %}
+                        <li><a href="/categories/meit_kiosk" class="">[Meit]약자를 위한 Kiosk({{category[1].size}})</a></li>
+                   {% endif %}
+                {% endfor %}
+            </ul>
+
         <!-- 끄적끄적 -->
         <li>
             {% for category in site.categories %}
