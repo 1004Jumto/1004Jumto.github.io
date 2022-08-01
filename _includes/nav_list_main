@@ -49,6 +49,8 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+          
+
         <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
@@ -68,6 +70,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Swea" %}
                         <li><a href="/categories/swea" class="">SW Expert Academy ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/algorithm" class="">JAVA ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
