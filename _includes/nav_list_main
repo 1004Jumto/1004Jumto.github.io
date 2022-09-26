@@ -84,18 +84,18 @@
 
          <!--프로젝트-->
          <span class="nav__sub-title">PROJECT</span>
-             <ul>
-                 {% for category in site.categories %}
-                     {% if category[0] == "Kiosk_a" %}
-                         <li><a href="/categories/kiosk_a" class="">Kiosk (with JAVA) ({{category[1].size}})</a></li>
-                    {% endif %}
-                 {% endfor %}
-             </ul>
-
+             
              <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Meit_Kiosk" %}
                         <li><a href="/categories/meit_kiosk" class="">[Meit]약자를 위한 Kiosk({{category[1].size}})</a></li>
+                   {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Shinhan_Bigdata" %}
+                        <li><a href="/categories/shinhan_bigdata" class="">[신빅해]공유카드({{category[1].size}})</a></li>
                    {% endif %}
                 {% endfor %}
             </ul>
