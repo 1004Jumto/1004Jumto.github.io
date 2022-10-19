@@ -17,6 +17,23 @@
 
          
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">Lecture</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+              
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Java" %}
+                        <li><a href="/categories/java" class="">JAVA ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Study</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
@@ -35,20 +52,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Python" %}
-                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Java" %}
-                        <li><a href="/categories/java" class="">JAVA ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+         
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
