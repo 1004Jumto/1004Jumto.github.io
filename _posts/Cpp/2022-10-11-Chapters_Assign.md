@@ -1,7 +1,7 @@
 ---
 title: "[C++ Programming] 과제 4-1, 4-2"
 excerpt: "[C++ Programming] 과제 4-1, 4-2"
-categories: [Cpp]
+categories: [Cpplecture]
 tags: [cpp, study]
 toc: true
 toc_sticky: true

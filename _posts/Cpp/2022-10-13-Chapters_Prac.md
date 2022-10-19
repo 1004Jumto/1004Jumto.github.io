@@ -1,7 +1,7 @@
 ---
 title: "[C++ Programming] 실습 17, 18"
 excerpt: "[C++ Programming] 7주차 1차시"
-categories: [Cpp]
+categories: [Cpplecture]
 tags: [cpp, study]
 toc: true
 toc_sticky: true
