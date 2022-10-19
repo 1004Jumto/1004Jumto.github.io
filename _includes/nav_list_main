@@ -21,7 +21,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                        <li><a href="/categories/python" class="">프로그래밍입문(Python) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -29,7 +29,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Java" %}
-                        <li><a href="/categories/java" class="">JAVA ({{category[1].size}})</a></li>
+                        <li><a href="/categories/java" class="">객체지향프로그래밍(JAVA) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -60,7 +60,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-          
+
 
         <span class="nav__sub-title">Coding Test</span>
             <ul>
