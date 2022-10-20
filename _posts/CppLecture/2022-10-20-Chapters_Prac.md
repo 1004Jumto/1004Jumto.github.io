@@ -202,5 +202,43 @@ denum1	num1	denum2	num2	result
 + 교수님 코드
 
 ```cpp
+    bool isPal(int num);
+    void getStr(string& s, int k);
+    void getRevStr(string& s, int k);
 
+    int solution(int n, int m) {
+        int answer = 0;
+        for (int i = 0; i <= m; i++) {
+            if (isPal(i)) // palindrome인지 아닌지 검사하는 함수
+                answer++;
+        }
+        
+        return answer;
+    }
+
+    bool isPal(int k) {
+        string str, revstr;
+        
+        getStr(str, k);         // 숫자 k를 문자열로 바꾸는 함수
+        getRevStr(revstr, k);   // 거꾸로 문자열을 만드는 함수
+        
+        if (str == revstr)
+            return true;
+        else
+            return false;
+    }
+
+    void getStr(string& s, int k) {
+        s = "";
+        for (int i = k; i > 0; i /= 10) {
+            s = (char)('0' + (i % 10)) + s;
+        }
+    }
+
+    void getRevStr(string& s, int k) {
+        s = "";
+        for (int i = k; i > 0; i /= 10) {
+            s += (char)('0' + (i % 10));
+        }
+    }
 ```
