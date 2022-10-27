@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습 15, 16"
+title: "[C++ Programming] 실습Part1 : 15.모스부호(1), 16.순서쌍 개수 구하기"
 excerpt: "[C++ Programming] 6주차 2차시"
 categories: [Cpplecture]
 tags: [cpp, study]

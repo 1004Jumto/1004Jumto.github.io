@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 과제 4-1, 4-2"
+title: "[C++ Programming] 과제Part1 : 4-1.다항식 더하기, 4-2. 소인수분해"
 excerpt: "[C++ Programming] 과제 4-1, 4-2"
 categories: [Cpplecture]
 tags: [cpp, study]

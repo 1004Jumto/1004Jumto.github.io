@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습 17, 18"
+title: "[C++ Programming] 실습Part1 : 17.짝수의 합, 18.외계행성의 나이"
 excerpt: "[C++ Programming] 7주차 1차시"
 categories: [Cpplecture]
 tags: [cpp, study]

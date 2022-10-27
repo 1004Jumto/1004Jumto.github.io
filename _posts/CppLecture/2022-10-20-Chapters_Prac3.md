@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습 22, 23"
+title: "[C++ Programming] 실습Part1 : 22.분수의 덧셈, 23.펠린드롬"
 excerpt: "[C++ Programming] 8주차 1차시"
 categories: [Cpplecture]
 tags: [cpp, study]

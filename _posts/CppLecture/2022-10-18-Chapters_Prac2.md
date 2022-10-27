@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습 19, 20"
+title: "[C++ Programming] 실습Part1 : 19.각도기, 20.최빈값구하기"
 excerpt: "[C++ Programming] 7주차 2차시"
 categories: [Cpplecture]
 tags: [cpp, study]
