@@ -1,5 +1,5 @@
 ---
-title: "Game_Polarbear"
+title: "[Game]PolarBearEscape"
 layout: archive
 permalink: categories/polarbear
 author_profile: true
