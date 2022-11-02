@@ -53,6 +53,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Csharp" %}
@@ -65,6 +66,14 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
                         <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Unity" %}
+                        <li><a href="/categories/unity" class="">Unity ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -104,10 +113,19 @@
                    {% endif %}
                 {% endfor %}
             </ul>
+
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Shinhan_Bigdata" %}
                         <li><a href="/categories/shinhan_bigdata" class="">[신빅해]공유카드 ({{category[1].size}})</a></li>
+                   {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Polarbear" %}
+                        <li><a href="/categories/polarbear" class="">[GM]PolarBearEscape ({{category[1].size}})</a></li>
                    {% endif %}
                 {% endfor %}
             </ul>
