@@ -111,6 +111,15 @@
                    {% endif %}
                 {% endfor %}
             </ul>
+        
+        <!--깃-->
+        <li>
+            {% for category in site.categories %}
+                {% if category[0] == "Git" %}
+                    <a href="/categories/git" class=""><span class="nav__sub-title">Git ({{category[1].size}})</span></a>
+                {% endif %}
+            {% endfor %}
+        <li>    
 
         <!-- 끄적끄적 -->
         <li>
@@ -119,8 +128,7 @@
                     <a href="/categories/note" class=""><span class="nav__sub-title">끄적끄적 ({{category[1].size}})</span></a>
                 {% endif %}
             {% endfor %}
-        <li>
-            
+        <li>        
 
       </li> 
   </ul>
