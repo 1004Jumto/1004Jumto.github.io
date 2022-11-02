@@ -15,7 +15,16 @@
       
       <li>
 
-         
+        
+         <!--깃-->
+        <li>
+            {% for category in site.categories %}
+                {% if category[0] == "Git" %}
+                    <a href="/categories/git" class=""><span class="nav__sub-title">Git ({{category[1].size}})</span></a>
+                {% endif %}
+            {% endfor %}
+        <li>
+
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
         <span class="nav__sub-title">Lecture</span>
             <ul>
@@ -130,14 +139,7 @@
                 {% endfor %}
             </ul>
         
-        <!--깃-->
-        <li>
-            {% for category in site.categories %}
-                {% if category[0] == "Git" %}
-                    <a href="/categories/git" class=""><span class="nav__sub-title">Git ({{category[1].size}})</span></a>
-                {% endif %}
-            {% endfor %}
-        <li>    
+            
 
         <!-- 끄적끄적 -->
         <li>
