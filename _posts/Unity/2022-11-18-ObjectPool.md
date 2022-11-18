@@ -1,15 +1,15 @@
 ---
-title: "[Unity] 오브젝트 풀링"
-excerpt: "[Unity] 오브젝트 풀링"
-categories: [Polarbear]
+title: "[Unity] 오브젝트 풀링 Object Pool"
+excerpt: "[Unity] 오브젝트 풀링 Object Pool"
+categories: [Unity]
 tags: [unity, polarbear, study]
 toc: true
 toc_sticky: true
 ---
 
-## 오브젝트 풀링
+## 오브젝트 풀링 Object Pool
 
-+ 개념 : 필요한 오브젝트를 미리 만들어두고 필요할 때 빼서 쓰고 다 쓰면 다시 반납하도록 한다
++ 개념 : <u>필요한 오브젝트를 미리 만들어두고 필요할 때 빼서 쓰고 다 쓰면 다시 반납하도록 한다</u>
 
 ![fail to bring](/assets/Image/blog/Unity_ObjectPooling.png)
 
@@ -22,7 +22,6 @@ toc_sticky: true
 1. 가비지 컬렉팅으로 인한 프레임 드랍
   + 오브젝트의 생성과 파괴는 생각보다 더 무거운 작업이다. 생성은 메모리를 새로 생성하고 리소스를 로드하는 등의 초기화과정이 필요하고, 파괴는 파괴 이후 발생하는 가비지 컬렉팅으로 인한 프레임 드랍이 발생할 수 있다
   + 가비지 컬렉팅 : c#에서 제공해주는 기능
-
   + Destroy로 오브젝트를 파괴할 때, 눈앞에서는 사라진 것처럼 보이지만 사실은 가비지 컬렉터가 일정사이클이 지난 뒤에 메모리를 뒤져 파괴 선언된 오브젝트를 수거한다. 그전까지는 메모리를 차지하고 있는 것이다. 렌더링과 게임 실행 등의 많은 일을 하는 와중에 수거할 오브젝트까지 많아지면 성능이 저하된다
 
 2. 메모리 파편화
