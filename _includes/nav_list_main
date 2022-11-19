@@ -65,6 +65,14 @@
 
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Cppstl" %}
+                        <li><a href="/categories/cppstl" class="">C++ STL ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Csharp" %}
                         <li><a href="/categories/csharp" class="">C# ({{category[1].size}})</a></li>
                     {% endif %}
