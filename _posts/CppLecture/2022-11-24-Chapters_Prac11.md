@@ -62,7 +62,7 @@ toc_sticky: true
 
 + ✏️풀이
 
-    ```cpp
+```cpp
     #include<iostream>
     #include<vector>
     #include<algorithm>
@@ -154,184 +154,185 @@ toc_sticky: true
 
         return 0;
     }
-    ```
+```
+
 <br>
 
 ## 확장
 
 ```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
+    #include <iostream>
+    #include <vector>
+    using namespace std;
 
-class P11
-{
-protected:
-    vector<vector<int>> table;
-    int width;
-    int height;
-    // virtual int getArea(int top, int left); 
-    // P11의 solution()이 호출되는 순간 getArea()는 virtual 함수이므로 런타임에 getArea를 호출하는 객체의 getArea함수를 가져온다
-    int getArea(int top, int left);
-    // virtual bool isWhatIWant(int top, int left, int bottom, int right);
-    bool isWhatIWant(int top, int left, int bottom, int right);
-    virtual bool isCorrectSize(int top, int left, int bottom, int right); // 정사각형인지 직사각형인지 체크
-
-public:
-    P11(vector<vector<int>> table);
-    int solution();
-};
-/* // 가장 넓은 직사각형 바꾸기 미션! */
-/* P112 */
-class P112 : public P11
-{
-    // getArea에서 issquare을 수정해야하므로 통채로 getArea를 오버라이드 해서 isRect이라는 함수를 새로 만든다
-    // int getArea(int top, int left);
-    // virtual bool isWhatIWant(int top, int left, int bottom, int right);
-    virtual bool isCorrectSize(int top, int left, int bottom, int right);
-
-public:
-    P112(vector<vector<int>> table);
-    // int solution();
-};
-
-////////// P11 ///////////
-P11::P11(vector<vector<int>> table)
-{
-    this->table = table;
-    this->width = table[0].size();
-    this->height = table.size();
-}
-int P11::solution()
-{
-    int maxarea = 0;
-    for (int i = 0; i < height; i++)
+    class P11
     {
-        for (int j = 0; j < width; j++)
-        {
-            int area = getArea(i, j); // 이 때의 getArea는 private으로 선언한다. 내부적으로만 쓰이기 때문에 굳이 외부적으로 드러내지 않는다
-            if (area > maxarea)
-            {
-                maxarea = area;
-            }
-        }
+    protected:
+        vector<vector<int>> table;
+        int width;
+        int height;
+        // virtual int getArea(int top, int left); 
+        // P11의 solution()이 호출되는 순간 getArea()는 virtual 함수이므로 런타임에 getArea를 호출하는 객체의 getArea함수를 가져온다
+        int getArea(int top, int left);
+        // virtual bool isWhatIWant(int top, int left, int bottom, int right);
+        bool isWhatIWant(int top, int left, int bottom, int right);
+        virtual bool isCorrectSize(int top, int left, int bottom, int right); // 정사각형인지 직사각형인지 체크
+
+    public:
+        P11(vector<vector<int>> table);
+        int solution();
+    };
+    /* // 가장 넓은 직사각형 바꾸기 미션! */
+    /* P112 */
+    class P112 : public P11
+    {
+        // getArea에서 issquare을 수정해야하므로 통채로 getArea를 오버라이드 해서 isRect이라는 함수를 새로 만든다
+        // int getArea(int top, int left);
+        // virtual bool isWhatIWant(int top, int left, int bottom, int right);
+        virtual bool isCorrectSize(int top, int left, int bottom, int right);
+
+    public:
+        P112(vector<vector<int>> table);
+        // int solution();
+    };
+
+    ////////// P11 ///////////
+    P11::P11(vector<vector<int>> table)
+    {
+        this->table = table;
+        this->width = table[0].size();
+        this->height = table.size();
     }
-    cout << maxarea << endl;
-    return maxarea;
-}
-int P11::getArea(int top, int left)
-{
-    int maxarea = 0;
-    for (int j = left; j < width; j++)
+    int P11::solution()
     {
-        for (int i = top; i < height; i++)
+        int maxarea = 0;
+        for (int i = 0; i < height; i++)
         {
-            if (isWhatIWant(top, left, i, j))
-            // top left bottom right
+            for (int j = 0; j < width; j++)
             {
-                int area = (i - top + 1) * (j - left + 1);
+                int area = getArea(i, j); // 이 때의 getArea는 private으로 선언한다. 내부적으로만 쓰이기 때문에 굳이 외부적으로 드러내지 않는다
                 if (area > maxarea)
                 {
                     maxarea = area;
                 }
             }
         }
+        cout << maxarea << endl;
+        return maxarea;
     }
-    return maxarea;
-}
-bool P11::isWhatIWant(int top, int left, int bottom, int right)
-{
-    if (!isCorrectSize(top, left, bottom, right)) // 가로 세로 길이 다른 경우
-        return false;
-    for (int i = top; i <= bottom; i++)
+    int P11::getArea(int top, int left)
     {
-        for (int j = left; j <= right; j++)
+        int maxarea = 0;
+        for (int j = left; j < width; j++)
         {
-            if (table[i][j] != 1) // 그 영역이 모두 1이 아니면 무조건 false 반환
+            for (int i = top; i < height; i++)
             {
-                return false;
+                if (isWhatIWant(top, left, i, j))
+                // top left bottom right
+                {
+                    int area = (i - top + 1) * (j - left + 1);
+                    if (area > maxarea)
+                    {
+                        maxarea = area;
+                    }
+                }
             }
         }
+        return maxarea;
     }
-    return true;
-}
-bool P11::isCorrectSize(int top, int left, int bottom, int right)
-{
-    if ((bottom - top) != (right - left))
-        return false;
-    return true;
-}
+    bool P11::isWhatIWant(int top, int left, int bottom, int right)
+    {
+        if (!isCorrectSize(top, left, bottom, right)) // 가로 세로 길이 다른 경우
+            return false;
+        for (int i = top; i <= bottom; i++)
+        {
+            for (int j = left; j <= right; j++)
+            {
+                if (table[i][j] != 1) // 그 영역이 모두 1이 아니면 무조건 false 반환
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    bool P11::isCorrectSize(int top, int left, int bottom, int right)
+    {
+        if ((bottom - top) != (right - left))
+            return false;
+        return true;
+    }
 
-///////////// P112 ////////////////
-P112::P112(vector<vector<int>> table) : P11(table)
-{;}
-/*
-int P112::solution()
-{
-    int maxarea = 0;
-    for (int i = 0; i < height; i++)
+    ///////////// P112 ////////////////
+    P112::P112(vector<vector<int>> table) : P11(table)
+    {;}
+    /*
+    int P112::solution()
     {
-        for (int j = 0; j < width; j++)
+        int maxarea = 0;
+        for (int i = 0; i < height; i++)
         {
-            int area = getArea(i, j); 
-            if (area > maxarea)
+            for (int j = 0; j < width; j++)
             {
-                maxarea = area;
-            }
-        }
-    }
-    cout << maxarea << endl;
-    return maxarea;
-}
-*/
-/*
-int P112::getArea(int top, int left)
-{
-    int maxarea = 0;
-    for (int j = left; j < width; j++)
-    {
-        for (int i = top; i < height; i++)
-        {
-            if (isRect(top, left, i, j))
-            // top left bottom right
-            {
-                int area = (i - top + 1) * (j - left + 1);
+                int area = getArea(i, j); 
                 if (area > maxarea)
                 {
                     maxarea = area;
                 }
             }
         }
+        cout << maxarea << endl;
+        return maxarea;
     }
-    return maxarea;
-}
-*/
-/*
-bool P112::isWhatIWant(int top, int left, int bottom, int right)
-{
-    for (int i = top; i <= bottom; i++)
+    */
+    /*
+    int P112::getArea(int top, int left)
     {
-        for (int j = left; j <= right; j++)
+        int maxarea = 0;
+        for (int j = left; j < width; j++)
         {
-            if (table[i][j] != 1) // 그 영역이 모두 1이 아니면 무조건 false 반환
+            for (int i = top; i < height; i++)
             {
-                return false;
+                if (isRect(top, left, i, j))
+                // top left bottom right
+                {
+                    int area = (i - top + 1) * (j - left + 1);
+                    if (area > maxarea)
+                    {
+                        maxarea = area;
+                    }
+                }
             }
         }
+        return maxarea;
     }
-    return true;
-}
-*/
-bool P112::isCorrectSize(int top, int left, int bottom, int right)
-{
-    return true;
-}
-int main()
-{
-    P11 myp11({{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {0, 0, 1, 0}});
-    myp11.solution();
+    */
+    /*
+    bool P112::isWhatIWant(int top, int left, int bottom, int right)
+    {
+        for (int i = top; i <= bottom; i++)
+        {
+            for (int j = left; j <= right; j++)
+            {
+                if (table[i][j] != 1) // 그 영역이 모두 1이 아니면 무조건 false 반환
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    */
+    bool P112::isCorrectSize(int top, int left, int bottom, int right)
+    {
+        return true;
+    }
+    int main()
+    {
+        P11 myp11({{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {0, 0, 1, 0}});
+        myp11.solution();
 
-    P112 myp112({{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {0, 0, 1, 0}});
-    myp112.solution();
-}
+        P112 myp112({{1, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {0, 0, 1, 0}});
+        myp112.solution();
+    }
 ```

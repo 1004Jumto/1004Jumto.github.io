@@ -142,5 +142,5 @@ toc_sticky: true
 
         FX2 fx2(n);
         cout << n << " : " << fx2.solution() << endl;
-    }
+    }    
 ```
