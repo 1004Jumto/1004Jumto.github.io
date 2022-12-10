@@ -17,6 +17,8 @@ toc_sticky: true
     > $(객체).load(filename, function(responseText, status, xhr){...}  
     > function(responseText, status, xhr) ➡️ callBack 함수  
 
+### 코드 예제 
+
 ```html
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
@@ -48,3 +50,120 @@ toc_sticky: true
 
 ## AJAX 메소드로 서버에 파일 로드
 
++ jQuery 메소드를 이용하여 서버에 파일을 로드할 수 있다.
++ 파일 종류: Text, HTML, XML, JSON
++ 전송 방식 : GET, POST
+
++ 주요 메소드
+    > $.ajax(), $.get(), $.post(), $.getJSON(), $.parseJSON()  
+    > load(), ajaxSend(), ajaxSuccess(), ajaxError()
+
++ **$.ajax()** : HTTP 요청 메소드  
+    ```
+    $.ajax({
+        url: filename,
+        type: GET/POST,
+        dataType: txt, html, xml, json..,
+        success: callBack
+    });
+    ```
+
+### $.ajax() 사용 코드 예제
+
+```html
+    <script>
+        $(document).ready(function(){
+            $("#agax05").click(function(){
+                var filename = document.ajax_test.filename.value;
+                var selType = selectType(filename);
+                // http 요청
+                $.ajax({
+                    url: filename,
+                    type: 'GET',
+                    dataType: selType,
+                    success: Task(result)
+                });
+            });
+        });
+
+        function selectType(filename){
+            switch(filename){
+                case "text.txt": 
+                    return ("text");
+                
+                case "text.htm": 
+                    return ("html");
+
+                case "text.xml": 
+                    return ("xml");
+                
+                default:
+                    return ("text");
+            }
+        }
+
+        function Task(result){
+            showResult(result);
+        }
+
+        function showResult(result){
+            switch(document.ajax_test.showType.value){
+                case "text":
+                    $("#result").text(result); break;
+                case "html":
+                    $("#result").html(result); break;
+            }
+        }
+
+    </script>
+
+    <form name="ajax_test">
+        <input type="radio" name="filename"  value="text.txt" checked />Text
+        <input type="radio" name="filename"  value="text.htm" />HTML
+        <input type="radio" name="filename"  value="text.xml" /> XML
+        <input type="radio" name="filename"  value="text1.txt" />None
+        <br>
+        <input type="radio" name="showType"  value="text" checked /> .text(result)  
+        <input type="radio" name="showType"  value="html" /> .html(result)
+        <input type="radio" name="showType"  value="alert" /> alert(result) 
+        <input type="button" id="ajax05" value="결과 보기">
+        <div id="result"></div>
+    </form>
+```
+
+### $.get()/$.post() 사용 코드 예제
+
+> $.get(URL, 콜백함수)  
+> $.post(URL, data, 콜백함수)
+
+```html
+    <script>
+        $(document).ready(function(){
+            $("#get01").click(function(){
+                $.get("text.txt", function(result){
+                    result00.innerText = result;
+                });
+            });
+
+            $("#get02").click(function(){
+                $.get("text.htm", function(result){
+                    result00.innerHTML = result;
+                });
+            });
+            
+            $("#post01").click(function(){
+                $.post("text.txt", {
+                    // data..
+                },
+                function(data, status){
+                    alert("Data : " + data + " Status : " + status);
+                });
+            });
+        });
+    </script>
+
+    <button id="get01"> $.get() text" </button>
+    <button id="get02"> $.get() html" </button>
+    <button id="post01"> $.post() text" </button>
+    <div id="result00"></div>
+```
