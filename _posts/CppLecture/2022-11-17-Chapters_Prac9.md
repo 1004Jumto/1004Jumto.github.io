@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습Part2: 핸드폰 번호 가리기"
+title: "[C++ Programming] 실습Part2 : 핸드폰 번호 가리기"
 excerpt: "[C++ Programming] 12주차 1차시: "
 categories: [Cpplecture]
 tags: [cpp, study]

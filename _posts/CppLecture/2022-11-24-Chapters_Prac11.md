@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습Part2: 가장 큰 정사각형 찾기"
+title: "[C++ Programming] 실습Part2 : 가장 큰 정사각형 찾기"
 excerpt: "[C++ Programming] 12주차 2차시"
 categories: [Cpplecture]
 tags: [cpp, study]

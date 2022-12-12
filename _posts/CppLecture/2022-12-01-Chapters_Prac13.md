@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습Part2: 행렬의 곱셈"
+title: "[C++ Programming] 실습Part2 : 행렬의 곱셈"
 excerpt: "[C++ Programming] 13주차 2차시"
 categories: [Cpplecture]
 tags: [cpp, study]

@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습Part2: 방문 길이"
+title: "[C++ Programming] 실습Part2 : 방문 길이"
 excerpt: "[C++ Programming] 14주차 2차시"
 categories: [Cpplecture]
 tags: [cpp, study]

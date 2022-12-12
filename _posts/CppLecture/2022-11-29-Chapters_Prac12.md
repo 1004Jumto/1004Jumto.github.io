@@ -1,5 +1,5 @@
 ---
-title: "[C++ Programming] 실습Part2: 2개 이하로 다른 비트"
+title: "[C++ Programming] 실습Part2 : 2개 이하로 다른 비트"
 excerpt: "[C++ Programming] 13주차 1차시"
 categories: [Cpplecture]
 tags: [cpp, study]
