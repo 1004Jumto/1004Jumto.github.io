@@ -5,9 +5,6 @@ main:
 
   - title: "Yearly연도별"
     url: /year-archive/
-
-  - title: "Monthly월별"
-    url: /month-archive/
     
   - title: "Categories카테고리"
     url: /categories/
