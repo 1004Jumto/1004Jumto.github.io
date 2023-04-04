@@ -59,7 +59,6 @@
                 {% endfor %}
             </ul>
 
-            
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithmlecture" %}
