@@ -61,8 +61,8 @@
 
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Weblecture" %}
-                        <li><a href="/categories/Algorithmlecture" class="">알고리즘입문 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Algorithmlecture" %}
+                        <li><a href="/categories/algorithmlecture" class="">알고리즘입문 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
