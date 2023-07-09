@@ -1,6 +1,6 @@
 ---
-title: "[Algorithm] 아라토스테네스의 체"
-excerpt: "[Algorithm] 아라토스테네스의 체"
+title: "[Eratosthenes] 아라토스테네스의 체"
+excerpt: "[Eratosthenes] 아라토스테네스의 체"
 categories: [Algorithm]
 tags: [cpp, algorithm, codingtest, study, baekjoon]
 toc: true

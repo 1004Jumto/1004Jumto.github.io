@@ -1,6 +1,6 @@
 ---
-title: "[Algorithm] 브루트포스(Brute Force) 알고리즘"
-excerpt: "[Algorithm] 브루트포스(Brute Force) 알고리즘"
+title: "[BruteForce] 브루트포스(Brute Force) 알고리즘"
+excerpt: "[BruteForce] 브루트포스(Brute Force) 알고리즘"
 categories: [Algorithm]
 tags: [cpp, algorithm, codingtest, study, baekjoon]
 toc: true

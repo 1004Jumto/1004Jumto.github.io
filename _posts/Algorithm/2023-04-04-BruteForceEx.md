@@ -1,9 +1,9 @@
 ---
 published : true
-title: "[6주차/실습] 억지기법과 완전탐색"
+title: "[BruteForce] 억지기법과 완전탐색"
 excerpt: "BruteForce Search Exercise : 선택정렬, 문자열매칭, 최근접쌍거리, DFS, BFS"
-categories: [Algorithmlecture]
-tags: [algorithm, study, lecture]
+categories: [Algorithm]
+tags: [cpp, algorithm, codingtest, study, swea]
 toc: true
 toc_sticky: true
 ---
