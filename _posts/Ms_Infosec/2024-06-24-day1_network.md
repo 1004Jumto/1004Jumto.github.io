@@ -30,7 +30,8 @@ IP : 인터넷에 연결된 기기에 부여된 고유 주소
 데이터 단위가 1024인 이유는 2의 제곱수이기 때문에.   
 
 + <실습> 본인 PC에 설정한 IP 값을 2진수로 변환하는 방법  
-cmd에서 `ipconfig` 명령어 입력 -> 숙명여대 와이파이로 연결된 IPv4 `10.101.41.22`
+cmd에서 `ipconfig` 명령어 입력 -> 숙명여대 와이파이로 연결된 IPv4 `10.101.41.22`  
+
 ![fail to bring](/assets/Image/ms_infosec/day1_1.png)
 
 2진수로 변환하면 -> 00001010.01100101.00101001.00010110
@@ -83,4 +84,20 @@ NAC(네트워크 접근 제어)라는 보안장비를 가지고 ip와 mac주소�
         > 브로드캐스트 주소: 206.37.129.127
 
 
+### DNS
+
+도메인 이름으로 직접 찾아가는 것이 아니라 ip주소로 찾아가기 때문에 도메인 이름을 ip로 변환해주는 시스템이다. 
+
+![fail to bring](/assets/Image/ms_infosec/day1_3.png)
+
+공인IP로 설정이 되어야 외부에서 접속이 가능하기 때문에.
+
+## OSI 7 Layer
+
+서로 다른 기능을 수행하는 7개의 계층으로, `물리, 데이터, 네트워크, 전송, 세션, 표현, 응용계층`으로 구성된다.   
+
++ <실습> wireshark 사용하기
+
+![fail to bring](/assets/Image/ms_infosec/day1_4.png)
+![fail to bring](/assets/Image/ms_infosec/day1_5.png)
 
