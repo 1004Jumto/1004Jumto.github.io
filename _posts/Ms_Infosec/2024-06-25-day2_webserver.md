@@ -67,7 +67,7 @@ State에서 포트가 열려있는지 아닌지 알 수 있다. `ip:portnum`가 
 > ps -ef | grep  
 > service httpd start   
 > ping  
-> ipconfig  
+> ifconfig  
 > nslookup  
 > arp -a  
 > ls -ltr  
