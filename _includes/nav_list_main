@@ -16,48 +16,7 @@
       <li>
 
         
-         <!--깃-->
-        <li>
-            {% for category in site.categories %}
-                {% if category[0] == "Git" %}
-                    <a href="/categories/git" class=""><span class="nav__sub-title">Git ({{category[1].size}})</span></a>
-                {% endif %}
-            {% endfor %}
-        <li>
-
-        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">Lecture</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Python" %}
-                        <li><a href="/categories/python" class="">프로그래밍입문(Python) ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-              
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Java" %}
-                        <li><a href="/categories/java" class="">객체지향프로그래밍(JAVA) ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Cpplecture" %}
-                        <li><a href="/categories/cpplecture" class="">C++ 프로그래밍 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Weblecture" %}
-                        <li><a href="/categories/weblecture" class="">웹프로그래밍응용 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+           
 
         <span class="nav__sub-title">Study</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
@@ -103,6 +62,15 @@
                 {% endfor %}
             </ul>
 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Git" %}
+                        <li><a href="/categories/git" class="">Git ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+
 
         <span class="nav__sub-title">Coding Test</span>
             <ul>
@@ -121,12 +89,53 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "LeetCode" %}
+                        <li><a href="/categories/leetcode" class="">LeetCode ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Swea" %}
                         <li><a href="/categories/swea" class="">SW Expert Academy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">Lecture</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">프로그래밍입문(Python) ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+              
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Javalecture" %}
+                        <li><a href="/categories/javalecture" class="">객체지향프로그래밍(JAVA) ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Cpplecture" %}
+                        <li><a href="/categories/cpplecture" class="">C++ 프로그래밍 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Weblecture" %}
+                        <li><a href="/categories/weblecture" class="">웹프로그래밍응용 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
 
          <!--프로젝트-->
         <span class="nav__sub-title">PROJECT</span>
